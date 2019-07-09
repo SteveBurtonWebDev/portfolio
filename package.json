@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My work-in-progress portfolio page, being built from scratch in HTML/CSS/JS.   No frameworks are planned to be used, although this could change over time",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteveBurtonWebDev/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteveBurtonWebDev/portfolio/issues"
+  },
+  "homepage": "https://github.com/SteveBurtonWebDev/portfolio#readme"
+}
