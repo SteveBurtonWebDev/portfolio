@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+html, body, .indexPage {
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.indexPage {
+    display: flex;
+    flex-direction: column;
+}
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-around;
@@ -57,19 +68,14 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    h1 {
-        font-size: 15px;
-        letter-spacing: 3px;
-        text-align: left;
-        }
     
-
+    h1 {
+        width: 60%;
+        letter-spacing: 3px;
+        }
+   
     .navlinks {
-        min-height: 90vh;
+        min-height: 60vh;
         border-top: 2px solid white;
         flex-direction: column;
         align-items: center;
@@ -116,3 +122,21 @@ h1 {
 }
 
 
+/* IMAGEBOX */
+.imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url('/images/laptop.jpg');
+    background-size: cover;
+    /* opacity: 1; */
+}
+
+.imageBox h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-shadow: 3px 3px 5px black;
+}
