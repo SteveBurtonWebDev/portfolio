@@ -2,7 +2,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navlinks');
     const navLinks = document.querySelectorAll('.navlinks li');
-    const imageBox = document.querySelector('.imageBox');
+    const mainBody = document.querySelector('.mainBody');
 
     burger.addEventListener('click', ()=> {
         // toggle nav
@@ -17,12 +17,21 @@ const navSlide = () => {
         });   
         // toggle burger icon
         burger.classList.toggle('toggleBurger');
-        // imageBox.style.opacity = !imageBox.style.opacity;
+        // console.log(imageBox);
+        if (imgMoved == false) {
+          mainBody.style.animation = `imageMoveDown 1s ease forwards`;
+          imgMoved=true;
+        } else {
+          mainBody.style.animation = `imageMoveUp 1s ease forwards`;
+          imgMoved = false;
+        }
+
     })
 
 
 
 }
 
+let imgMoved = false;
 navSlide();
 

@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:#661194;
+    background: linear-gradient(to bottom, rgb(102, 17, 148), rgb(178, 12, 106));
     width: 100%;
     min-height: 10vh;
     font-family: 'Poppins', sans-serif;
@@ -79,7 +79,8 @@ h1 {
         border-top: 2px solid white;
         flex-direction: column;
         align-items: center;
-        background-color: #661194;
+        background: linear-gradient(to bottom, rgb(178, 12, 106), rgb(102, 17, 148));
+
         position: absolute;
         top: 10vh;
         width: 100%;
@@ -111,6 +112,7 @@ h1 {
     }
 }
 
+
 .toggleBurger .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -129,9 +131,9 @@ h1 {
     align-items: center;
     width: 100%;
     height: 60vh;
-    background-image: url('/images/laptop.jpg');
+    background-image: url('./images/laptop.jpg');
     background-size: cover;
-    /* opacity: 1; */
+    opacity: 1;
 }
 
 .imageBox h1 {
@@ -140,3 +142,31 @@ h1 {
     font-size: 40px;
     text-shadow: 3px 3px 5px black;
 }
+
+@keyframes imageMoveDown{
+    from{
+        transform: translateY(10vh)
+    }
+    to{
+        transform: translateY(60vh)
+    }
+}
+
+@keyframes imageMoveUp{
+    from{
+        transform: translateY(50vh)
+    }
+    to{
+        transform: translateY(0vh)
+    }
+}
+
+
+/* Index-About */
+
+/* .about {
+    width: 80%;
+    background-color: blue;
+    height: 50px;
+    border: 1px solid black;
+} */
