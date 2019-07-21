@@ -18,10 +18,11 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(102, 17, 148), rgb(178, 12, 106));
+    background: linear-gradient(to bottom, rgb(24, 27, 164), rgb(56, 243, 235));
     width: 100%;
     min-height: 10vh;
     font-family: 'Poppins', sans-serif;
+    position: fixed;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
     letter-spacing: 5px;
     color: #fff;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     }
 
 .navlinks {
@@ -45,6 +47,8 @@ h1 {
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+
 }
 
 .burger {
@@ -75,15 +79,14 @@ h1 {
         }
    
     .navlinks {
+        position: absolute;
         min-height: 60vh;
-        border-top: 2px solid white;
+        border-top: 1px solid rgb(60, 243, 235);
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(to bottom, rgb(178, 12, 106), rgb(102, 17, 148));
-
-        position: absolute;
+        background: linear-gradient(to bottom, rgb(56, 243, 235), rgb(24, 27, 164));
         top: 10vh;
-        width: 100%;
+        width: 40%;
         right: 0px;
         transform: translateX(100%);
         transition: transform 0.6s ease-in;
@@ -100,7 +103,7 @@ h1 {
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: translateX(-150%);
 }
 
 @keyframes navLinkFade{
@@ -131,8 +134,10 @@ h1 {
     align-items: center;
     width: 100%;
     height: 60vh;
+    margin-top: 10vh;
     background-image: url('./images/laptop.jpg');
     background-size: cover;
+    /* background-attachment: fixed; */
     opacity: 1;
 }
 
@@ -143,30 +148,29 @@ h1 {
     text-shadow: 3px 3px 5px black;
 }
 
-@keyframes imageMoveDown{
-    from{
-        transform: translateY(10vh)
-    }
-    to{
-        transform: translateY(60vh)
-    }
+
+.about h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    margin: 50px 0;
 }
 
-@keyframes imageMoveUp{
-    from{
-        transform: translateY(50vh)
-    }
-    to{
-        transform: translateY(0vh)
-    }
-}
-
-
-/* Index-About */
-
-/* .about {
+.about .logos {
     width: 80%;
-    background-color: blue;
-    height: 50px;
-    border: 1px solid black;
-} */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .logos img {
+    width: 15vw;
+    height: 15vw;
+}
+
+@media screen and (max-width: 768px) {
+    .about h2 {
+        font-size: 40px;
+    }
+
+}
