@@ -17,15 +17,6 @@ const navSlide = () => {
         });   
         // toggle burger icon
         burger.classList.toggle('toggleBurger');
-// temporary move main body down
-        // if (imgMoved == false) {
-        //   mainBody.style.animation = `imageMoveDown 1s ease forwards`;
-        //   imgMoved=true;
-        // } else {
-        //   mainBody.style.animation = `imageMoveUp 1s ease forwards`;
-        //   imgMoved = false;
-        // }
-
     })
 
 
