@@ -163,7 +163,7 @@ h1 {
 .banner h2, .about h2, .projects h2, .findMe h2 {
     text-align: center;
     font-size: 70px;
-    margin: 60px 0 40px 0;
+    margin: 60px 0 20px 0;
 }
 .about p {
     text-align: center;
@@ -219,6 +219,46 @@ h1 {
     font-size: 20px;
     padding: 8px;
     border-radius: 10px;
+}
+
+.findMeBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px auto 20px auto;
+    justify-content: space-around;
+    background-color: rgb(4, 7, 122);
+    color: white;
+    border: 2px solid black;
+    border-radius: 15px 15px;
+}
+
+.findMeContent {
+    text-align: center;
+}
+.findMeDetail {
+   margin: 15px 0; 
+}
+.findMeDetail h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.findMeDetail h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.findMeLinks img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.mainArea .design {
+    color:rgb(4, 7, 122);
+    margin: 40px auto;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 768px) {
