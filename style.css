@@ -164,7 +164,7 @@ h1 {
 }
 
 .about {
-    width: 78%;
+    width: 60%;
     margin: 40px auto ; 
 }
 .about p {
@@ -180,7 +180,6 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* flex-shrink: 0; */
 }
 .project-box {
     display: flex;
@@ -192,10 +191,7 @@ h1 {
     border: 2px solid black;
     border-radius: 15px 15px;
 }
-.project-box:hover {
-    transition: 0.3s;
-    transform: scale(1.2);
-}
+
 .project-box .project-link {
     height: 200px;
 }
@@ -211,14 +207,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-content: center;
-   
     width: 30%;
 }
 .project-box p {
     text-align: center;
     padding: 10px 10px 0 10px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .project-box .project-code {
     text-decoration: none;
@@ -255,6 +250,13 @@ h1 {
     font-size: calc(1.2em + .6vw);
     font-weight: 400;
 }
+.findMeDetail a {
+    color: white;
+    font-size: calc(1.0em + .6vw);
+    font-weight: 400;
+    text-decoration: none;
+    font-style: italic;
+}
 .findMeLinks img {
     width: 50px;
     height: 50px;
@@ -271,18 +273,18 @@ h1 {
         width: 100%;
         height: 30vh;
     }
+.about p {
+    font-weight: 500;
+}
  .project-wrapper {
     width: 100%;
-       
-    }
+ }
 .project-box {
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
     border-radius: 0 0;
 }
-.project-box:hover {
-    transform: none;
-}
+
 .project-back {
     border-top-left-radius: 0 0;
     border-top-right-radius: 0 0;
