@@ -215,9 +215,14 @@ h1 {
     font-size: 20px;
     font-weight: 400;
 }
-.project-box .project-code {
+.project-button-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.project-button {
     text-decoration: none;
-    margin: 20px auto;
+    margin: 20px 20px;
     background-color: rgb(4, 7, 122);
     color: white;
     font-size: 20px;
