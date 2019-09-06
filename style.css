@@ -219,8 +219,10 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .project-button {
+    text-align: center;
     text-decoration: none;
     margin: 20px 20px;
     background-color: rgb(4, 7, 122);
@@ -300,6 +302,9 @@ h1 {
     border-top-left-radius: 0 0;
     border-top-right-radius: 0 0;
     cursor: pointer;
+}
+.project-button-line {
+    flex-direction: column;
 }
 
 .banner {
